@@ -23,6 +23,7 @@
 		F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227141D27B76C00711612 /* NSDictionary+GetObj.m */; };
 		F8F227191D27BA4200711612 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227181D27BA4200711612 /* BaseViewController.m */; };
 		F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2271D1D27BB0300711612 /* BaseModel.m */; };
+		F8F227211D27BD6600711612 /* FCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227201D27BD6600711612 /* FCTabBarController.m */; };
 		FA5F0A386547147D3B467387 /* libPods-FastCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,8 @@
 		F8F227181D27BA4200711612 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F8F2271C1D27BB0300711612 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		F8F2271D1D27BB0300711612 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		F8F2271F1D27BD6600711612 /* FCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTabBarController.h; sourceTree = "<group>"; };
+		F8F227201D27BD6600711612 /* FCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +119,10 @@
 		F8F226D71D275DB500711612 /* FastCode */ = {
 			isa = PBXGroup;
 			children = (
-				F8F227041D276E1700711612 /* Third */,
-				F8F227051D276E1700711612 /* Utils */,
 				F8F226DB1D275DB500711612 /* AppDelegate.h */,
 				F8F226DC1D275DB500711612 /* AppDelegate.m */,
+				F8F227041D276E1700711612 /* Third */,
+				F8F227051D276E1700711612 /* Utils */,
 				F8F227031D276E1700711612 /* Class */,
 				F8F226EF1D27601F00711612 /* SourceFile */,
 				F8F226D81D275DB500711612 /* Supporting Files */,
@@ -165,8 +168,9 @@
 		F8F227031D276E1700711612 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				F8F227161D27BA1A00711612 /* Base */,
 				F8F2270C1D27A77300711612 /* Global */,
+				F8F227161D27BA1A00711612 /* Base */,
+				F8F227221D27C20300711612 /* UnitModule */,
 				F8F227061D276E4200711612 /* ViewControllers */,
 			);
 			path = Class;
@@ -225,6 +229,8 @@
 		F8F227111D27B03000711612 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				F8F2271F1D27BD6600711612 /* FCTabBarController.h */,
+				F8F227201D27BD6600711612 /* FCTabBarController.m */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -263,6 +269,21 @@
 				F8F2271D1D27BB0300711612 /* BaseModel.m */,
 			);
 			name = BaseModel;
+			sourceTree = "<group>";
+		};
+		F8F227221D27C20300711612 /* UnitModule */ = {
+			isa = PBXGroup;
+			children = (
+				F8F227231D27C25D00711612 /* DBManager */,
+			);
+			path = UnitModule;
+			sourceTree = "<group>";
+		};
+		F8F227231D27C25D00711612 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DBManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +408,7 @@
 			files = (
 				F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */,
 				F8F2270B1D278E5400711612 /* HUD.m in Sources */,
+				F8F227211D27BD6600711612 /* FCTabBarController.m in Sources */,
 				F8F227191D27BA4200711612 /* BaseViewController.m in Sources */,
 				F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */,
 				F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */,
