@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //  init window
+    [self createWindow];
+    
     return YES;
 }
 
@@ -40,6 +45,52 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - init
+- (void)createWindow {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [self createRootViewController];
+    [self.window.window makeKeyAndVisible];
+}
+
+- (UIViewController *)createRootViewController {
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [self tabBarViewControllers];
+    
+    return self.tabBarController;
+}
+
+- (NSArray *)tabBarViewControllers {
+    NSMutableArray *array = [NSMutableArray array];
+    
+    //  nav
+    UIViewController *viewController = [[UIViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav2
+    viewController = [[UIViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav3
+    viewController = [[UIViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav4
+    viewController = [[UIViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav5
+    viewController = [[UIViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    return array;
 }
 
 @end
