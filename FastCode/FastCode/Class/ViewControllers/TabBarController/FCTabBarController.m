@@ -2,11 +2,12 @@
 //  FCTabBarController.m
 //  FastCode
 //
-//  Created by 朋 邹 on 16/7/2.
+//  Created by LP on 16/7/2.
 //  Copyright © 2016年 zou. All rights reserved.
 //
 
 #import "FCTabBarController.h"
+#import "BaseViewController.h"
 
 @interface FCTabBarController ()
 
@@ -17,21 +18,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.viewControllers = [self tabBarViewControllers];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - create view controllers 
+- (NSArray *)tabBarViewControllers {
+    NSMutableArray *array = [NSMutableArray array];
+    
+    //  nav
+    BaseViewController *viewController = [[BaseViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav2
+    viewController = [[BaseViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav3
+    viewController = [[BaseViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav4
+    viewController = [[BaseViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    //  nav5
+    viewController = [[BaseViewController alloc] init];
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [array addObject:nav];
+    
+    return array;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
