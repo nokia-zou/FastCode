@@ -20,6 +20,9 @@
 		F8F227001D27612000711612 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F226FF1D27612000711612 /* ImageIO.framework */; };
 		F8F227021D27614300711612 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F227011D27614300711612 /* libsqlite3.tbd */; };
 		F8F2270B1D278E5400711612 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2270A1D278E5400711612 /* HUD.m */; };
+		F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227141D27B76C00711612 /* NSDictionary+GetObj.m */; };
+		F8F227191D27BA4200711612 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227181D27BA4200711612 /* BaseViewController.m */; };
+		F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2271D1D27BB0300711612 /* BaseModel.m */; };
 		FA5F0A386547147D3B467387 /* libPods-FastCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,12 @@
 		F8F2270A1D278E5400711612 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		F8F2270E1D27A79600711612 /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 		F8F227101D27AD0E00711612 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F8F227131D27B76C00711612 /* NSDictionary+GetObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GetObj.h"; sourceTree = "<group>"; };
+		F8F227141D27B76C00711612 /* NSDictionary+GetObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GetObj.m"; sourceTree = "<group>"; };
+		F8F227171D27BA4200711612 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F8F227181D27BA4200711612 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F8F2271C1D27BB0300711612 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		F8F2271D1D27BB0300711612 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +165,7 @@
 		F8F227031D276E1700711612 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F8F227161D27BA1A00711612 /* Base */,
 				F8F2270C1D27A77300711612 /* Global */,
 				F8F227061D276E4200711612 /* ViewControllers */,
 			);
@@ -180,6 +190,7 @@
 		F8F227061D276E4200711612 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8F227111D27B03000711612 /* TabBarController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +198,7 @@
 		F8F227071D278E1900711612 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F8F227121D27B6F300711612 /* Dictionary */,
 				F8F227081D278E2700711612 /* HUD */,
 			);
 			name = Category;
@@ -208,6 +220,49 @@
 				F8F2270E1D27A79600711612 /* CommonDef.h */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		F8F227111D27B03000711612 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		F8F227121D27B6F300711612 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F8F227131D27B76C00711612 /* NSDictionary+GetObj.h */,
+				F8F227141D27B76C00711612 /* NSDictionary+GetObj.m */,
+			);
+			name = Dictionary;
+			sourceTree = "<group>";
+		};
+		F8F227161D27BA1A00711612 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2271B1D27BAEF00711612 /* BaseModel */,
+				F8F2271A1D27BA4E00711612 /* BaseViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F8F2271A1D27BA4E00711612 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F8F227171D27BA4200711612 /* BaseViewController.h */,
+				F8F227181D27BA4200711612 /* BaseViewController.m */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		F8F2271B1D27BAEF00711612 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2271C1D27BB0300711612 /* BaseModel.h */,
+				F8F2271D1D27BB0300711612 /* BaseModel.m */,
+			);
+			name = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */,
 				F8F2270B1D278E5400711612 /* HUD.m in Sources */,
+				F8F227191D27BA4200711612 /* BaseViewController.m in Sources */,
+				F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */,
 				F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */,
 				F8F226DA1D275DB500711612 /* main.m in Sources */,
 			);
