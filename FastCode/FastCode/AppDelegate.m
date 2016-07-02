@@ -7,11 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "FCTabBarController.h"
 
 @interface AppDelegate ()
-@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
+
 
 @implementation AppDelegate
 
@@ -21,8 +22,6 @@
     
     //  init window
     [self createWindow];
-    
-    
     
     return YES;
 }
@@ -59,41 +58,8 @@
 }
 
 - (UIViewController *)createRootViewController {
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [self tabBarViewControllers];
-    
-    return self.tabBarController;
-}
-
-- (NSArray *)tabBarViewControllers {
-    NSMutableArray *array = [NSMutableArray array];
-    
-    //  nav
-    UIViewController *viewController = [[UIViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [array addObject:nav];
-    
-    //  nav2
-    viewController = [[UIViewController alloc] init];
-    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [array addObject:nav];
-    
-    //  nav3
-    viewController = [[UIViewController alloc] init];
-    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [array addObject:nav];
-    
-    //  nav4
-    viewController = [[UIViewController alloc] init];
-    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [array addObject:nav];
-    
-    //  nav5
-    viewController = [[UIViewController alloc] init];
-    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [array addObject:nav];
-    
-    return array;
+    FCTabBarController *tab = [[FCTabBarController alloc] init];
+    return tab;
 }
 
 @end
