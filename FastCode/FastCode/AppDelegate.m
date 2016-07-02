@@ -51,6 +51,7 @@
 - (void)createWindow {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.hidden = NO;
     self.window.rootViewController = [self createRootViewController];
     [self.window.window makeKeyAndVisible];
 }
