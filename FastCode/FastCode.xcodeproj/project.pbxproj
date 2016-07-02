@@ -80,6 +80,9 @@
 			children = (
 				F8F226DB1D275DB500711612 /* AppDelegate.h */,
 				F8F226DC1D275DB500711612 /* AppDelegate.m */,
+				F8F227031D276E1700711612 /* Class */,
+				F8F227041D276E1700711612 /* Third */,
+				F8F227051D276E1700711612 /* Utils */,
 				F8F226EF1D27601F00711612 /* SourceFile */,
 				F8F226D81D275DB500711612 /* Supporting Files */,
 			);
@@ -118,6 +121,35 @@
 				F8F226F11D27608C00711612 /* CoreImage.framework */,
 			);
 			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		F8F227031D276E1700711612 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F8F227061D276E4200711612 /* ViewControllers */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F8F227041D276E1700711612 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		F8F227051D276E1700711612 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F8F227061D276E4200711612 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
