@@ -22,6 +22,8 @@
     //  init window
     [self createWindow];
     
+    
+    
     return YES;
 }
 

@@ -44,6 +44,8 @@
 		F8F227011D27614300711612 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F8F227091D278E5400711612 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
 		F8F2270A1D278E5400711612 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		F8F2270E1D27A79600711612 /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
+		F8F227101D27AD0E00711612 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,11 @@
 		F8F226D71D275DB500711612 /* FastCode */ = {
 			isa = PBXGroup;
 			children = (
+				F8F227041D276E1700711612 /* Third */,
+				F8F227051D276E1700711612 /* Utils */,
 				F8F226DB1D275DB500711612 /* AppDelegate.h */,
 				F8F226DC1D275DB500711612 /* AppDelegate.m */,
 				F8F227031D276E1700711612 /* Class */,
-				F8F227041D276E1700711612 /* Third */,
-				F8F227051D276E1700711612 /* Utils */,
 				F8F226EF1D27601F00711612 /* SourceFile */,
 				F8F226D81D275DB500711612 /* Supporting Files */,
 			);
@@ -130,6 +132,7 @@
 			children = (
 				F8F226E41D275DB500711612 /* Assets.xcassets */,
 				F8F226E91D275DB500711612 /* Info.plist */,
+				F8F227101D27AD0E00711612 /* PrefixHeader.pch */,
 			);
 			name = SourceFile;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 		F8F227031D276E1700711612 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F8F2270C1D27A77300711612 /* Global */,
 				F8F227061D276E4200711612 /* ViewControllers */,
 			);
 			path = Class;
@@ -161,7 +165,6 @@
 		F8F227041D276E1700711612 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				F8F227071D278E1900711612 /* Category */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 		F8F227051D276E1700711612 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F8F227071D278E1900711612 /* Category */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -185,7 +189,8 @@
 			children = (
 				F8F227081D278E2700711612 /* HUD */,
 			);
-			path = Category;
+			name = Category;
+			path = ../Third/Category;
 			sourceTree = "<group>";
 		};
 		F8F227081D278E2700711612 /* HUD */ = {
@@ -195,6 +200,14 @@
 				F8F2270A1D278E5400711612 /* HUD.m */,
 			);
 			name = HUD;
+			sourceTree = "<group>";
+		};
+		F8F2270C1D27A77300711612 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F8F2270E1D27A79600711612 /* CommonDef.h */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
+				GCC_PREFIX_HEADER = FastCode/PrefixHeader.pch;
 				INFOPLIST_FILE = FastCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +446,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
+				GCC_PREFIX_HEADER = FastCode/PrefixHeader.pch;
 				INFOPLIST_FILE = FastCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
