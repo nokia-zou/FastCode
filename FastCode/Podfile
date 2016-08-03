@@ -12,6 +12,7 @@ target 'FastCode' do
     pod 'FMDB'
     pod 'MBProgressHUD'
     pod 'MJRefresh'
-    
+    pod 'YYKit'
+
 end
 
