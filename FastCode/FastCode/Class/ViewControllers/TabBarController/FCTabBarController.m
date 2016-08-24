@@ -8,6 +8,7 @@
 
 #import "FCTabBarController.h"
 #import "BaseViewController.h"
+#import "TestTableViewController.h"
 
 @interface FCTabBarController ()
 
@@ -47,7 +48,7 @@
     [array addObject:nav];
     
     //  nav5
-    viewController = [[BaseViewController alloc] init];
+    viewController = [[TestTableViewController alloc] initWithStyle:UITableViewStylePlain];
     nav = [[UINavigationController alloc] initWithRootViewController:viewController];
     [array addObject:nav];
     
