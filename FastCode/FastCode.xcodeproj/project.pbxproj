@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F806DB071D716BE10055CE03 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB061D716BE10055CE03 /* DBManager.m */; };
+		F806DB0A1D716C890055CE03 /* DBTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB091D716C890055CE03 /* DBTable.m */; };
+		F806DB0D1D718B0A0055CE03 /* DBExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB0C1D718B0A0055CE03 /* DBExecute.m */; };
 		F8F226DA1D275DB500711612 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F226D91D275DB500711612 /* main.m */; };
 		F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F226DC1D275DB500711612 /* AppDelegate.m */; };
 		F8F226E51D275DB500711612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F226E41D275DB500711612 /* Assets.xcassets */; };
@@ -32,6 +35,12 @@
 		374E0C6E2316BF0356F5ADAD /* Pods-FastCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.release.xcconfig"; sourceTree = "<group>"; };
 		709166372E5745E2A0E40C81 /* Pods-FastCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.debug.xcconfig"; sourceTree = "<group>"; };
 		977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F806DB051D716BE10055CE03 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F806DB061D716BE10055CE03 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F806DB081D716C890055CE03 /* DBTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTable.h; sourceTree = "<group>"; };
+		F806DB091D716C890055CE03 /* DBTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTable.m; sourceTree = "<group>"; };
+		F806DB0B1D718B0A0055CE03 /* DBExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBExecute.h; sourceTree = "<group>"; };
+		F806DB0C1D718B0A0055CE03 /* DBExecute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBExecute.m; sourceTree = "<group>"; };
 		F8F226D51D275DB500711612 /* FastCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F226D91D275DB500711612 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F226DB1D275DB500711612 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -286,6 +295,12 @@
 		F8F227231D27C25D00711612 /* DBManager */ = {
 			isa = PBXGroup;
 			children = (
+				F806DB051D716BE10055CE03 /* DBManager.h */,
+				F806DB061D716BE10055CE03 /* DBManager.m */,
+				F806DB081D716C890055CE03 /* DBTable.h */,
+				F806DB091D716C890055CE03 /* DBTable.m */,
+				F806DB0B1D718B0A0055CE03 /* DBExecute.h */,
+				F806DB0C1D718B0A0055CE03 /* DBExecute.m */,
 			);
 			path = DBManager;
 			sourceTree = "<group>";
@@ -422,9 +437,12 @@
 				F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */,
 				F8F2270B1D278E5400711612 /* HUD.m in Sources */,
 				F8F227211D27BD6600711612 /* FCTabBarController.m in Sources */,
+				F806DB071D716BE10055CE03 /* DBManager.m in Sources */,
+				F806DB0A1D716C890055CE03 /* DBTable.m in Sources */,
 				F8F227271D27C4A900711612 /* TestTableViewController.m in Sources */,
 				F8F227191D27BA4200711612 /* BaseViewController.m in Sources */,
 				F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */,
+				F806DB0D1D718B0A0055CE03 /* DBExecute.m in Sources */,
 				F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */,
 				F8F226DA1D275DB500711612 /* main.m in Sources */,
 			);
