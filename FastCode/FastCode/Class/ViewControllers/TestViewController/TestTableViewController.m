@@ -39,8 +39,6 @@
 
 #pragma mark - db test
 - (void)saveData {
-    BaseModel *model = [[BaseModel alloc] init];
-    model.ID = @"10000";
     
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i = 0; i < 100; i++) {
@@ -82,16 +80,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
-            [HUD tip:@"我我我我我我我"];
+            [HUD tip:@"tip"];
             break;
         case 1:
-            [HUD tip:@"0" icon:kHUDOkIcon yOffset:-100];
+            [HUD tip:@"-100 offset" icon:kHUDOkIcon yOffset:-100];
             break;
         case 2:
-            [HUD tipText:@"我我我我我我我我我我我我我"];
+            [HUD tipText:@"tip text"];
             break;
         case 3:
-            [HUD showProgress:@"请稍后..."];
+            [HUD showProgress:@"waiting..." inView:self.view];
             break;
         default:
             break;
