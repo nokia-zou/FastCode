@@ -10,13 +10,15 @@
 #import "HUD.h"
 #import "DBManager.h"
 #import "BaseModel.h"
+#import "TestDataSource.h"
+
 
 @interface TestTableViewController ()
-@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) DBTable *db;
-
+@property (nonatomic, strong) TestDataSource *dataSource;
 
 @end
+
 
 @implementation TestTableViewController
 
@@ -26,6 +28,8 @@
     self.tableView.tableFooterView = [[UIView alloc] init];
     
     _db = [DBManager tableWithName:@"test1"];
+    
+    _dataSource = [[TestDataSource alloc] init];
     
 //    [self saveData];
     [self readData];
@@ -52,8 +56,12 @@
 
 - (void)readData {
     __weak typeof(self) weakSelf = self;
-    [_db asyncReadData:^(NSArray *result, NSError *error) {
-        weakSelf.dataArray = result;
+//    [_db asyncReadData:^(NSArray *result, NSError *error) {
+//        weakSelf.dataArray = result;
+//        [weakSelf.tableView reloadData];
+//    }];
+    
+    [_dataSource refreshData:^(BOOL isSuccess, NSError *error) {
         [weakSelf.tableView reloadData];
     }];
 }
@@ -61,7 +69,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _dataArray.count;
+    return _dataSource.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,7 +80,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"id"];
     }
     
-    cell.textLabel.text = [_dataArray[indexPath.row] ID];
+    cell.textLabel.text = [_dataSource.dataArray[indexPath.row] ID];
     
     return cell;
 }

@@ -13,6 +13,8 @@
 		F84306581D77CAE70028E7D4 /* BaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F84306571D77CAE70028E7D4 /* BaseDataSource.m */; };
 		F843065B1D77CB0C0028E7D4 /* BaseProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F843065A1D77CB0C0028E7D4 /* BaseProtocol.m */; };
 		F843065E1D77D5840028E7D4 /* ProtocolSender.m in Sources */ = {isa = PBXBuildFile; fileRef = F843065D1D77D5840028E7D4 /* ProtocolSender.m */; };
+		F8EB6F4E1D78430100D97CC5 /* TestDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB6F4D1D78430100D97CC5 /* TestDataSource.m */; };
+		F8EB6F511D78431800D97CC5 /* TestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB6F501D78431800D97CC5 /* TestProtocol.m */; };
 		F8F226DA1D275DB500711612 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F226D91D275DB500711612 /* main.m */; };
 		F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F226DC1D275DB500711612 /* AppDelegate.m */; };
 		F8F226E51D275DB500711612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F226E41D275DB500711612 /* Assets.xcassets */; };
@@ -50,6 +52,10 @@
 		F843065A1D77CB0C0028E7D4 /* BaseProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProtocol.m; sourceTree = "<group>"; };
 		F843065C1D77D5840028E7D4 /* ProtocolSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolSender.h; sourceTree = "<group>"; };
 		F843065D1D77D5840028E7D4 /* ProtocolSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolSender.m; sourceTree = "<group>"; };
+		F8EB6F4C1D78430100D97CC5 /* TestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataSource.h; sourceTree = "<group>"; };
+		F8EB6F4D1D78430100D97CC5 /* TestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataSource.m; sourceTree = "<group>"; };
+		F8EB6F4F1D78431800D97CC5 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
+		F8EB6F501D78431800D97CC5 /* TestProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProtocol.m; sourceTree = "<group>"; };
 		F8F226D51D275DB500711612 /* FastCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8F226D91D275DB500711612 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F226DB1D275DB500711612 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +136,17 @@
 				F843065D1D77D5840028E7D4 /* ProtocolSender.m */,
 			);
 			name = BaseDataSource;
+			sourceTree = "<group>";
+		};
+		F8EB6F4B1D7842DA00D97CC5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB6F4C1D78430100D97CC5 /* TestDataSource.h */,
+				F8EB6F4D1D78430100D97CC5 /* TestDataSource.m */,
+				F8EB6F4F1D78431800D97CC5 /* TestProtocol.h */,
+				F8EB6F501D78431800D97CC5 /* TestProtocol.m */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 		F8F226CC1D275DB500711612 = {
@@ -331,6 +348,7 @@
 		F8F227241D27C48F00711612 /* TestViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB6F4B1D7842DA00D97CC5 /* DataSource */,
 				F8F227251D27C4A900711612 /* TestTableViewController.h */,
 				F8F227261D27C4A900711612 /* TestTableViewController.m */,
 			);
@@ -460,6 +478,7 @@
 				F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */,
 				F8F2270B1D278E5400711612 /* HUD.m in Sources */,
 				F8F227211D27BD6600711612 /* FCTabBarController.m in Sources */,
+				F8EB6F4E1D78430100D97CC5 /* TestDataSource.m in Sources */,
 				F806DB071D716BE10055CE03 /* DBManager.m in Sources */,
 				F806DB0A1D716C890055CE03 /* DBTable.m in Sources */,
 				F84306581D77CAE70028E7D4 /* BaseDataSource.m in Sources */,
@@ -467,6 +486,7 @@
 				F8F227271D27C4A900711612 /* TestTableViewController.m in Sources */,
 				F8F227191D27BA4200711612 /* BaseViewController.m in Sources */,
 				F8F227151D27B76C00711612 /* NSDictionary+GetObj.m in Sources */,
+				F8EB6F511D78431800D97CC5 /* TestProtocol.m in Sources */,
 				F806DB0D1D718B0A0055CE03 /* DBExecute.m in Sources */,
 				F8F226DD1D275DB500711612 /* AppDelegate.m in Sources */,
 				F843065E1D77D5840028E7D4 /* ProtocolSender.m in Sources */,

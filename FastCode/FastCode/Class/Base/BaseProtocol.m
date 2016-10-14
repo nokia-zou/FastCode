@@ -27,11 +27,11 @@
 
 #pragma mark - property
 - (NSString *)httpMethod {
-    if (!_httpPath) {
-        _httpPath = @"GET";
+    if (!_httpMethod) {
+        _httpMethod = @"GET";
     }
     
-    return _httpPath;
+    return _httpMethod;
 }
 
 #pragma mark - init
