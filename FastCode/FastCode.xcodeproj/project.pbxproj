@@ -52,6 +52,7 @@
 		F843065A1D77CB0C0028E7D4 /* BaseProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseProtocol.m; sourceTree = "<group>"; };
 		F843065C1D77D5840028E7D4 /* ProtocolSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolSender.h; sourceTree = "<group>"; };
 		F843065D1D77D5840028E7D4 /* ProtocolSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolSender.m; sourceTree = "<group>"; };
+		F86CE9241DB11B660080BF61 /* FastCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FastCode.entitlements; sourceTree = "<group>"; };
 		F8EB6F4C1D78430100D97CC5 /* TestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataSource.h; sourceTree = "<group>"; };
 		F8EB6F4D1D78430100D97CC5 /* TestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataSource.m; sourceTree = "<group>"; };
 		F8EB6F4F1D78431800D97CC5 /* TestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProtocol.h; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 			children = (
 				F8F226E41D275DB500711612 /* Assets.xcassets */,
 				F8F226E91D275DB500711612 /* Info.plist */,
+				F86CE9241DB11B660080BF61 /* FastCode.entitlements */,
 				F8F227101D27AD0E00711612 /* PrefixHeader.pch */,
 			);
 			name = SourceFile;
@@ -390,6 +392,11 @@
 					F8F226D41D275DB500711612 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = UL7V387997;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -534,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -572,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -585,14 +592,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FastCode/FastCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
+				DEVELOPMENT_TEAM = UL7V387997;
 				GCC_PREFIX_HEADER = FastCode/PrefixHeader.pch;
 				INFOPLIST_FILE = FastCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kufaxian.wanwanmeixiangdao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "12d21a52-42af-4269-b964-29c8ad2364ae";
+				PROVISIONING_PROFILE = "e0b42c0a-a53c-442c-a29a-c5d8b0dd8b5c";
+				PROVISIONING_PROFILE_SPECIFIER = wanwanmeixiangdao_dev;
 			};
 			name = Debug;
 		};
@@ -602,15 +612,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FastCode/FastCode.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Junhui Shao (5P4EK4DL9R)";
+				DEVELOPMENT_TEAM = UL7V387997;
 				GCC_PREFIX_HEADER = FastCode/PrefixHeader.pch;
 				INFOPLIST_FILE = FastCode/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kufaxian.wanwanmeixiangdao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "12d21a52-42af-4269-b964-29c8ad2364ae";
+				PROVISIONING_PROFILE = "e0b42c0a-a53c-442c-a29a-c5d8b0dd8b5c";
+				PROVISIONING_PROFILE_SPECIFIER = wanwanmeixiangdao_dev;
 			};
 			name = Release;
 		};
