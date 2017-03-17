@@ -53,7 +53,10 @@
     self.resultObject = [NSMutableArray array];
     
     for (NSDictionary *postDic in dataArray) {
-        [self.resultObject addObject:[[postDic dictionaryValueForKey:@"group"] stringValueForKey:@"test"]];
+        NSString *text = [[postDic dictionaryValueForKey:@"group"] stringValueForKey:@"text"];
+        if (text) {
+            [self.resultObject addObject:text];
+        }
     }
     
     return YES;

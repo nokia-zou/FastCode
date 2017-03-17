@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4324EABF6364ADF553DF663 /* libPods-FastCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4F29AD0F437D6F5FC6B82 /* libPods-FastCode.a */; };
 		F806DB071D716BE10055CE03 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB061D716BE10055CE03 /* DBManager.m */; };
 		F806DB0A1D716C890055CE03 /* DBTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB091D716C890055CE03 /* DBTable.m */; };
 		F806DB0D1D718B0A0055CE03 /* DBExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = F806DB0C1D718B0A0055CE03 /* DBExecute.m */; };
@@ -33,13 +34,12 @@
 		F8F2271E1D27BB0300711612 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F2271D1D27BB0300711612 /* BaseModel.m */; };
 		F8F227211D27BD6600711612 /* FCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227201D27BD6600711612 /* FCTabBarController.m */; };
 		F8F227271D27C4A900711612 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F227261D27C4A900711612 /* TestTableViewController.m */; };
-		FA5F0A386547147D3B467387 /* libPods-FastCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		374E0C6E2316BF0356F5ADAD /* Pods-FastCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.release.xcconfig"; sourceTree = "<group>"; };
-		709166372E5745E2A0E40C81 /* Pods-FastCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.debug.xcconfig"; sourceTree = "<group>"; };
-		977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E4F29AD0F437D6F5FC6B82 /* libPods-FastCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52DD848C8167DB325F73D86 /* Pods-FastCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.release.xcconfig"; sourceTree = "<group>"; };
+		F10FBF1ED125E054ECD41607 /* Pods-FastCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastCode/Pods-FastCode.debug.xcconfig"; sourceTree = "<group>"; };
 		F806DB051D716BE10055CE03 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		F806DB061D716BE10055CE03 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		F806DB081D716C890055CE03 /* DBTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTable.h; sourceTree = "<group>"; };
@@ -102,26 +102,17 @@
 				F8F226F61D2760A000711612 /* Foundation.framework in Frameworks */,
 				F8F226F41D27609600711612 /* UIKit.framework in Frameworks */,
 				F8F226F21D27608C00711612 /* CoreImage.framework in Frameworks */,
-				FA5F0A386547147D3B467387 /* libPods-FastCode.a in Frameworks */,
+				C4324EABF6364ADF553DF663 /* libPods-FastCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2EDFDC7E3193DD957DCB6B9 /* Pods */ = {
+		F3C29A3FBE27B6C7D9B96483 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				709166372E5745E2A0E40C81 /* Pods-FastCode.debug.xcconfig */,
-				374E0C6E2316BF0356F5ADAD /* Pods-FastCode.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F0FE1CA3A1140E9EB3373CD8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				977914CBB298AF457F8A8FB9 /* libPods-FastCode.a */,
+				70E4F29AD0F437D6F5FC6B82 /* libPods-FastCode.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,8 +146,8 @@
 			children = (
 				F8F226D71D275DB500711612 /* FastCode */,
 				F8F226D61D275DB500711612 /* Products */,
-				E2EDFDC7E3193DD957DCB6B9 /* Pods */,
-				F0FE1CA3A1140E9EB3373CD8 /* Frameworks */,
+				F94402E7B76B60FC673FB270 /* Pods */,
+				F3C29A3FBE27B6C7D9B96483 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -357,6 +348,15 @@
 			path = TestViewController;
 			sourceTree = "<group>";
 		};
+		F94402E7B76B60FC673FB270 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F10FBF1ED125E054ECD41607 /* Pods-FastCode.debug.xcconfig */,
+				C52DD848C8167DB325F73D86 /* Pods-FastCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,12 +364,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8F226EC1D275DB500711612 /* Build configuration list for PBXNativeTarget "FastCode" */;
 			buildPhases = (
-				67456C639ADF7B6E1BAE497E /* Check Pods Manifest.lock */,
+				D838A8487F9FCB021FE81A61 /* [CP] Check Pods Manifest.lock */,
 				F8F226D11D275DB500711612 /* Sources */,
 				F8F226D21D275DB500711612 /* Frameworks */,
 				F8F226D31D275DB500711612 /* Resources */,
-				1ED950EDFC2CCEF8551975FF /* Embed Pods Frameworks */,
-				E7BC591B17E10AA1AF28DADC /* Copy Pods Resources */,
+				7C5F62A1964BC918A6A13194 /* [CP] Embed Pods Frameworks */,
+				E567ACC12005E352995418F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,14 +430,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1ED950EDFC2CCEF8551975FF /* Embed Pods Frameworks */ = {
+		7C5F62A1964BC918A6A13194 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,29 +445,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastCode/Pods-FastCode-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		67456C639ADF7B6E1BAE497E /* Check Pods Manifest.lock */ = {
+		D838A8487F9FCB021FE81A61 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E7BC591B17E10AA1AF28DADC /* Copy Pods Resources */ = {
+		E567ACC12005E352995418F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,7 +588,7 @@
 		};
 		F8F226ED1D275DB500711612 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 709166372E5745E2A0E40C81 /* Pods-FastCode.debug.xcconfig */;
+			baseConfigurationReference = F10FBF1ED125E054ECD41607 /* Pods-FastCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -608,7 +608,7 @@
 		};
 		F8F226EE1D275DB500711612 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 374E0C6E2316BF0356F5ADAD /* Pods-FastCode.release.xcconfig */;
+			baseConfigurationReference = C52DD848C8167DB325F73D86 /* Pods-FastCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
